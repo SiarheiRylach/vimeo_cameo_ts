@@ -1,0 +1,38 @@
+{
+  "name": "vimeo_cameo_ts",
+  "version": "1.0.0",
+  "description": "protractor testing framewwork and tests on typescript",
+  "main": "protractor.config.js",
+  "dependencies": {
+    "@types/protractor": "^4.0.0",
+    "chai": "4.1.2",
+    "chai-as-promised": "7.1.1",
+    "cucumber": "3.1.0",
+    "cucumber-tsflow": "^2.2.0",
+    "gulp": "3.9.1",
+    "protractor": "5.*",
+    "protractor-cucumber-framework": "4.1.1",
+    "pug": "^2.0.0-rc.4",
+    "typescript": "^2.7.1",
+    "utils_for_tests": "https://github.com/SiarheiRylach/utils_for_tests.git"
+  },
+  "scripts": {
+    "postinstall": "webdriver-manager update --versions.chrome 2.33",
+    "update": "webdriver-manager update --versions.chrome 2.33",
+    "e2e": "node_modules/.bin/protractor protractor.config.js",
+    "report": "gulp report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiarheiRylach/vimeo_cameo_ts.git"
+  },
+  "keywords": [
+    "vimeo"
+  ],
+  "author": "Siarhei Rylach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SiarheiRylach/vimeo_cameo_ts/issues"
+  },
+  "homepage": "https://github.com/SiarheiRylach/vimeo_cameo_ts#readme"
+}
