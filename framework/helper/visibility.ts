@@ -1,6 +1,17 @@
 import {browser, ElementFinder} from "protractor";
 
 export class Visibility{
+
+    private static _instance = new Visibility();
+
+    private constructor(){
+
+    }
+
+    public static getInstance(){
+        return Visibility._instance || (Visibility._instance = new Visibility());
+    }
+
     isVisibleOnScreen(elem: ElementFinder){
         let screenSize: number = 0;
 

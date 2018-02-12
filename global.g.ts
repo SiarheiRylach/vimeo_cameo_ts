@@ -1,5 +1,2 @@
-import {ProtractorExpectedConditions,ExpectedConditions} from "protractor";
-
-declare const timeoutEveryStep: number = 100 * 1000;
-declare const defTimeoutExplicit: number = 15000;
-declare const EC: ProtractorExpectedConditions = ExpectedConditions;
+export declare const timeoutEveryStep = 100000;
+export declare const defTimeoutExplicit = 15000;
