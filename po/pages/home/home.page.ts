@@ -1,9 +1,9 @@
 import {MasterPage} from "../master/master.page";
 import {by, element, ElementFinder} from "protractor";
-import {SignUpPage} from "../master/sign_up";
 import {Sign} from "./sign.form";
 
 export class HomePage extends MasterPage{
+    url: string = 'https://vimeo.com/cameo';
     ['Join']: ElementFinder = element(by.css('li[data-menu-id="join"] a'));
     ['Login']: ElementFinder = element(by.css('li[data-menu-id="login"] a'));
     ['Sign']: Sign = new Sign();

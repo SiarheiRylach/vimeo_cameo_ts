@@ -1,12 +1,11 @@
 import {World} from "../../po/world";
-import {MasterPage} from "../../po/pages/master/master.page";
 
 export class State {
-    private state = null;
-    private static _instance = new State();
+    private state;
+    private static _instance: State;
 
     private constructor(){
-
+        this.state = {};
     }
 
     public static getInstance(){
@@ -18,7 +17,7 @@ export class State {
         this.state = World.getInstance()[pageName];
     }
 
-    getState(): MasterPage {
+    getState(){
         return this.state;
     }
 

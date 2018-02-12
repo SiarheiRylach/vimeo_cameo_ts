@@ -26,7 +26,6 @@ export let config = {
     onPrepare: () => {
         commonUtils.createDir('./output');
         globals.browser.waitForAngularEnabled(false);
-
     },
 
     cucumberOpts: {

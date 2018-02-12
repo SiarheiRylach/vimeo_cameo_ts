@@ -30,7 +30,7 @@ class ActionSteps {
     };
 
     @when(/^I wait until element "(.*)" is (not )?visible$/)
-    private witForElement(element, isNot){
+    private waitForElement(element, isNot){
         if (isNot) {
             return browser.wait(EC.invisibilityOf(Query.getInstance().getProtractorElement(element)), defTimeoutExplicit);
         } else {

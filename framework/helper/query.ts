@@ -5,7 +5,7 @@ import {MasterPage} from "../../po/pages/master/master.page";
 export class Query {
     /** @type {string} */
     private delimiter = " in ";
-    private static _instance = new Query();
+    private static _instance: Query;
 
     private constructor(){
 

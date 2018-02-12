@@ -5,16 +5,18 @@ import {Query} from "../framework/helper/query";
 import {Visibility} from "../framework/helper/visibility";
 import * as chai from "chai"
 import * as chaiAsPromised from "chai-as-promised";
+import {timeout} from "q";
 chai.use(chaiAsPromised);
 const expect = chai.expect;
 chai.should();
 
 @binding()
 class ValidationSteps {
-
     @then(/^I should be on "(.*)" page$/)
     private checkPage(page){
         State.getInstance().setState(page);
+        if(page ==='Settings Page')
+            console.log(State.getInstance());
         return expect(browser.getCurrentUrl()).to.eventually.contain(State.getInstance().getUrl());
     };
 

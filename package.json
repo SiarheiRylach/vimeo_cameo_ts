@@ -13,12 +13,14 @@
     "protractor": "5.*",
     "protractor-cucumber-framework": "4.1.1",
     "pug": "^2.0.0-rc.4",
+    "ts-node": "^4.1.0",
     "typescript": "^2.7.1",
     "utils_for_tests": "https://github.com/SiarheiRylach/utils_for_tests.git"
   },
   "scripts": {
     "postinstall": "webdriver-manager update --versions.chrome 2.33",
     "update": "webdriver-manager update --versions.chrome 2.33",
+    "pree2e": "tsc",
     "e2e": "node_modules/.bin/protractor protractor.config.js",
     "report": "gulp report"
   },

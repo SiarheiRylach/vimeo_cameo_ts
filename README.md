@@ -1,5 +1,5 @@
 # vimeo.com_tests
-    Tests for vimeo.com/cameo
+   Tesing framework and tests for vimeo.com/cameo using typescript
 
 ***Prerequisites***:</br>
   1. Install nodejs to your OS and set all environment variables for node js.</br>
